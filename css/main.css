@@ -1047,3 +1047,90 @@ header .menu .links > li > a:hover::after {
   color: var(--main-color);
 }
 /* end team */
+/* start services */
+
+.services {
+  padding: 100px 0;
+}
+
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 110px;
+  column-gap: 50px;
+}
+
+.services .box-container .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.services .box .head i {
+  font-size: 70px;
+  color: #d5d5d5;
+  margin: 20px;
+}
+
+.services .box .head h3 {
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.services .box .info {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  background-color: var(--back-color);
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  counter-increment: count;
+}
+
+.services .box .info::after {
+  position: absolute;
+  content: "0" counter(count);
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 30px;
+  background-color: var(--main-color);
+  width: 30%;
+  height: 99%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+  font-weight: bold;
+  z-index: -1;
+}
+
+.services .box .info::before {
+  position: absolute;
+  content: "";
+  left: 87px;
+  top: 0;
+  background-color: #d5d5d5;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transform: skewX(-30deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+}
+
+.services .box .info a {
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+
+/* end services */
