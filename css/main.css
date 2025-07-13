@@ -68,7 +68,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px auto 70px;
+  margin: 0px auto 150px;
   position: relative;
   transition-duration: 0.1s;
   z-index: 5;
@@ -893,7 +893,6 @@ header .menu .links > li > a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   row-gap: 50px;
   column-gap: 40px;
-  margin-top: 100px;
 }
 
 .testimonials .box-container .box {
@@ -910,7 +909,6 @@ header .menu .links > li > a:hover::after {
 
 .testimonials .box-container .box img {
   width: 100px;
-  height: 100px;
   border-radius: 50%;
   position: absolute;
   top: -60px;
@@ -941,7 +939,8 @@ header .menu .links > li > a:hover::after {
 .team .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 100px;
+  row-gap: 110px;
+  column-gap: 50px;
 }
 
 .team .box-container .box {
@@ -951,7 +950,7 @@ header .menu .links > li > a:hover::after {
 .team .box-container .box::before {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 85%;
   height: 120%;
   background-color: #f3f3f3;
   top: -50px;
@@ -962,6 +961,27 @@ header .menu .links > li > a:hover::after {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.team .box-container .box::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 120%;
+  background-color: rgba(203, 203, 203, 0.776);
+  top: -50px;
+  right: -10px;
+  z-index: -1;
+  transition-duration: 0.2s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.team .box-container .box:hover:after {
+  width: 85%;
 }
 
 .team .box-container .box .image {
@@ -979,6 +999,12 @@ header .menu .links > li > a:hover::after {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.team .box-container .box:hover .image img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 
 .team .box-container .box .text {
@@ -1013,6 +1039,11 @@ header .menu .links > li > a:hover::after {
 .team .box-container .box .social i {
   font-size: 20px;
   color: var(--p-color);
-  margin-left: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.team .box-container .box .social i:hover {
+  color: var(--main-color);
 }
 /* end team */
