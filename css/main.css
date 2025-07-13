@@ -1051,12 +1051,13 @@ header .menu .links > li > a:hover::after {
 
 .services {
   padding: 100px 0;
+  background-color: var(--background-color);
 }
 
 .services .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 110px;
+  row-gap: 40px;
   column-gap: 50px;
 }
 
@@ -1078,6 +1079,7 @@ header .menu .links > li > a:hover::after {
 .services .box .head h3 {
   font-size: 30px;
   color: var(--main-color);
+  text-transform: capitalize;
 }
 
 .services .box .info {
@@ -1106,7 +1108,6 @@ header .menu .links > li > a:hover::after {
   padding-left: 20px;
   align-items: center;
   font-weight: bold;
-  z-index: -1;
 }
 
 .services .box .info::before {
@@ -1126,6 +1127,7 @@ header .menu .links > li > a:hover::after {
   -moz-transform: skewX(-30deg);
   -ms-transform: skewX(-30deg);
   -o-transform: skewX(-30deg);
+  z-index: 2;
 }
 
 .services .box .info a {
