@@ -932,3 +932,53 @@ header .menu .links > li > a:hover::after {
   line-height: 1.6;
 }
 /* end testimonials */
+/* start team */
+
+.team {
+  padding: 100px 0;
+}
+
+.team .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 100px;
+}
+
+.team .box-container .box {
+  position: relative;
+}
+
+.team .box-container .box::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 120%;
+  background-color: #f3f3f3;
+  top: -50px;
+  left: 60px;
+  border-radius: 10px;
+  z-index: -1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.team .box-container .box .image {
+  z-index: 2;
+}
+
+.team .box-container .box .image img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.team .box-container .box .text {
+  z-index: 2;
+}
+/* end team */
