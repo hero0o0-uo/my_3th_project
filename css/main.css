@@ -1274,8 +1274,21 @@ header .menu .links > li > a:hover::after {
   }
 
   .how-it-works .container .box-container .image img {
-    width: 50%;
-    height: 50%;
+    width: 100px;
+  }
+
+  .how-it-works .container .box-container .text h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .how-it-works .container {
+    flex-direction: row;
+  }
+
+  .how-it-works .container > .image img {
+    width: 350px;
   }
 }
 
