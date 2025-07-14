@@ -1507,3 +1507,24 @@ header .menu .links > li > a:hover::after {
   }
 }
 /* end events */
+/* start price */
+.price {
+  padding: 100px 0;
+  background-color: var(--background-color);
+}
+
+.price .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 40px;
+  column-gap: 100px;
+}
+
+.price .box-container .box {
+  padding: 20px;
+  background-color: white;
+}
+
+.price .box-container .box head h3 {
+}
+/* end price */
