@@ -1342,3 +1342,168 @@ header .menu .links > li > a:hover::after {
 }
 
 /* end how-it-works */
+/* start events */
+.events {
+  padding: 100px 0;
+  position: relative;
+}
+
+.events::before {
+  content: url(../images/dots.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 80%;
+  z-index: -1;
+}
+
+.events::after {
+  content: url(../images/dots.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+}
+
+.events .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 40px;
+  column-gap: 100px;
+}
+
+.events .container .image img {
+  width: 100%;
+}
+
+.events .container .right-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.events .container .right-sec .text {
+}
+
+.events .container .right-sec .text h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.events .container .right-sec .text p {
+  color: var(--p-color);
+  line-height: 2;
+  font-size: 20px;
+}
+
+.events .container .right-sec .count-down {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+
+.events .container .count-down .box {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 80px;
+}
+
+.events .container .count-down .box h3 {
+  color: var(--main-color);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.events .container .count-down .box p {
+  padding: 10px;
+  border-top: 1px solid black;
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+}
+
+.events .Subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.events .Subscribe form {
+  width: 600px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-top: 100px;
+}
+
+.events .Subscribe form input:first-child {
+  padding: 30px 250px 30px 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: none;
+}
+
+.events .Subscribe form input:last-child {
+  padding: 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  margin-left: 50px;
+}
+
+@media (max-width: 992px) {
+  .events .container .image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .events .Subscribe form input:first-child {
+    width: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .events .Subscribe form input:last-child {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+  }
+
+  .events .container .image {
+    display: none;
+  }
+}
+/* end events */
